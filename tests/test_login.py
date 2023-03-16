@@ -51,3 +51,12 @@ class TestLogin:
 
         assert login.page.url == 'https://www.saucedemo.com/'
         assert login.page.locator(error_box).inner_text() == expected_error
+
+
+class TestLogout:
+
+    def test_logout(self, login_page):
+        inventory = login_page.do_login(username='standard_user', password='secret_sauce')
+        login = inventory.do_logout
+
+        assert login.page.url == 'https://www.saucedemo.com/'
