@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Self
 from playwright.sync_api import Page
-from .inventory_page import InventoryPage
+from .inventory import InventoryPage
 
 
 @dataclass

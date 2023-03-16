@@ -1,7 +1,7 @@
 from playwright.sync_api import Page
 from pytest import fixture
 
-from infrastructure.page_objects.login_page import LoginPage
+from infrastructure.pages.login import LoginPage
 
 
 @fixture()
