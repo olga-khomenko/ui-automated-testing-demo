@@ -22,7 +22,7 @@ class InventoryPage:
 
     @property
     def do_logout(self):
-        from .login_page import LoginPage
+        from .login import LoginPage
         self.open_menu
         self.page.locator(self.s.logout).click()
         return LoginPage(self.page)
