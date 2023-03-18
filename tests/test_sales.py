@@ -1,13 +1,3 @@
-from pytest import fixture
-
-from infrastructure.pages.inventory import InventoryPage
-
-
-@fixture
-def inventory_page(login_page) -> InventoryPage:
-    return login_page.do_login(username='standard_user', password='secret_sauce')
-
-
 class TestSales:
 
     def test_add_red_tshirt_to_cart(self, inventory_page):
