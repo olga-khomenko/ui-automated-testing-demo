@@ -9,7 +9,7 @@ class Selectors:
     close_menu: str ='button[id="react-burger-cross-btn"]'
     logout: str = 'a[id="logout_sidebar_link"]'
     cart: str = 'a[class="shopping_cart_link"]'
-    add_to_cart: str = 'button[data-test="add-to-cart-test.allthethings()-%s"]'
+    add_to_cart: str = 'button[data-test="add-to-cart-%s"]'
 
 
 class InventoryPage:
